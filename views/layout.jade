@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+  body
+    .container.mt-5
+      .row
+        .col-lg-2
+          img.img-fluid.mb-5(src="images/lLogo.png")
+          ul.list-group
+            li.list-group-item About
+            li.list-group-item Contact
+          
+          .mt-5
+            a.fa.fa-instagram.social(href="https://www.instagram.com/llongdesign/") 
+            a.fa.fa-linkedin.ml-3.social(href="https://linkedin.com/in/llong")
+        .col-lg-10
+          block content
