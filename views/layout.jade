@@ -7,15 +7,23 @@ html
     
   body
     .container.mt-5
-      .row
+      .row.d-flex.justify-content-around
         .col-lg-2
-          img.img-fluid.mb-5(src="images/lLogo.png")
+          a(href="/")
+            img.img-fluid(src="images/lLogo.png")
           ul.list-group
-            li.list-group-item About
-            li.list-group-item Contact
+            a.text-secondary.list-group-item(href="/about") About
+            a.text-secondary.list-group-item(href="/about") Contact
+            h4.list-group-item Projects
+            a.text-secondary.list-group-item(href="/google") Google Contacts
+            a.text-secondary.list-group-item(href="/fujitsu") Fujitsu Goals 
+            a.text-secondary.list-group-item(href="/fujitsu") Nightwatch
           
           .mt-5
-            a.fa.fa-instagram.social(href="https://www.instagram.com/llongdesign/") 
-            a.fa.fa-linkedin.ml-3.social(href="https://linkedin.com/in/llong")
-        .col-lg-10
+            a.fa.fa-instagram.social.text-secondary(href="https://www.instagram.com/llongdesign/") 
+            a.fa.fa-linkedin.ml-3.social.text-secondary(href="https://linkedin.com/in/llong")
+        .col-lg-9
           block content
+        
+        footer
+           span.text-secondary Hand coded with love using Node.js

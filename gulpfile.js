@@ -8,8 +8,8 @@ var cleanCSS = require('gulp-clean-css');
 gulp.task('sass', function(){
   return gulp.src('./scss/**/*.scss')
   .pipe(sass().on('error', sass.logError))
-  .pipe(concat('style.css'))
   .pipe(purifycss(['./public/app/**/*.js', './views/**/*.jade']))
+  .pipe(concat('style.css'))
   .pipe(cleanCSS({compatibility: 'ie9'}))
   .pipe(gulp.dest('./public/stylesheets'))
 });
