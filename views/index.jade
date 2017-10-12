@@ -2,15 +2,22 @@ extends layout
 
 block content
   .jumbotron.mb-5
-    .display-4.text-secondary Lewis Long is a
-    .display-3(style="margin-top:-1rem;") UI/UX Designer
-    h5.text-secondary living in Silicon Valley
-    a.mt-3.btn.btn-primary.btn-lg(href="/about") Learn More
+    .row
+      .col-lg-6
+        .display-4 #[strong Lewis Long] is a
+        .display-3(style="margin-top:-1rem;") UI/UX Designer
+        h5.text-secondary living in Silicon Valley
+        
+      .col-lg-6
+        p Nice to meet you, I'm Lewis! If you are looking for a UI/UX who takes a pragmatic and business centric approach to design I'm your man. With 10 years in the field working with companies like Google, SAP, Cisco and Fujitsu you can be confident your product will be in good hands.
+        p 
+          a.mt-3.btn.btn-primary(href="/about") I'm intrigued, tell me more
 
     
   .row.mb-5
     .col-lg-6.text-lg-right.text-md-left
-      img.img-fluid.mb-3(src="/images/contacts_app_placeholder.jpg")
+      a(href="/google")
+        img.img-fluid.mb-3(src="/images/contacts_app_placeholder.jpg")
     .col-lg-6
       h4 Google / Android Contacts App
       h5.text-secondary.mb-3 UX Production Designer
@@ -20,20 +27,22 @@ block content
   
   .row.mb-5
     .col-lg-6.text-lg-right.text-md-left
-      img.img-fluid.mb-3(src="/images/nightwatch_placeholder.jpg")
+      a(href="/fujitsu")
+        img.img-fluid.mb-3(src="/images/nightwatch_placeholder.jpg")
     .col-lg-6
       h4 Fujitsu - Goal Sharing App
       h5.text-secondary.mb-3 Lead UX Designer
       p This app was designed and built for Fujitsu's R&amp;D department as a way for people to share their goals as well as view people with similar goals and see how they were able to succeed in that goal.
       .mt-3
-        a.btn.btn-secondary(href="/google") View Case Study
+        a.btn.btn-secondary(href="/fujitsu") View Case Study
   
   .row.mb
     .col-lg-6.text-lg-right.text-md-left
-      img.img-fluid.mb-3(src="/images/nightwatch_placeholder.jpg")
+      a(href="/nightwatch")
+        img.img-fluid.mb-3(src="/images/nightwatch_placeholder.jpg")
     .col-lg-6
       h4  Nightwatch
       h5.text-secondary.mb-3 Lead UX Designer/Developer
       p Nightwatch is a cross platform app that monitors the health of horses who wear a paired device.
       .mt-3
-        a.btn.btn-secondary(href="/google") View Case Study
+        a.btn.btn-secondary(href="/nightwatch") View Case Study

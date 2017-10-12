@@ -10,6 +10,14 @@ router.get('/google', function(req,res){
   res.render('google')
 });
 
+router.get('/fujitsu', function(req,res){
+  res.render('fujitsu')
+});
+
+router.get('/nightwatch', function(req,res){
+  res.render('nightwatch')
+});
+
 router.get('/about', function(req,res){
   res.render('about')
 });

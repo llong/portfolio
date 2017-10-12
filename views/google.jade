@@ -8,17 +8,49 @@ block content
       
       .mt-5
         h3.mb-3 Project Overview
-        p Contacts is Google's official application for managing contacts. Google releases updates roughly every six weeks. 
+        p Contacts is Google's official application for managing contacts. My role was to participate in UX discussions, assure the app followed Google Material Design guidelines and to create images for the Google Play Store showcasing the new features for each subsequent release in a six week release cycle.
         
+        .row.mt-3.mb-3
+          .col-lg-4.mb-1
+            img.img-fluid.rounded(src="/images/google_contacts/contacts_simpleList.png", alt="Google Contacts - Simple List Screen")
+          .col-lg-4.mb-1
+            img.img-fluid.rounded(src="/images/google_contacts/contacts_suggestions.png", alt="Google Contacts - Suggestions Screen")
+          .col-lg-4.mb-1
+            img.img-fluid.rounded(src="/images/google_contacts/contacts_mergeDuplicates.png", alt="Google Contacts - Merge Duplicates Screen")
+        
+        .row
+          small.text-secondary Google Play Store Screens: #[a(href="https://play.google.com/store/apps/details?id=com.google.android.contacts",target="_blank") see here]
         
       .mt-5
         h3 Project Goal
-        p The goal for Contacts app is to provide users a robust yet intuitive solution to manage their relationships rather than simply acting as an address book. These relationships should include personal, professional as well as those with businesses themselves.
+        p The goal for Contacts app is to provide users a robust yet intuitive solution to manage their relationships across all devices rather than simply acting as an address book. These relationships should include personal, professional as well as those with businesses themselves.
+        
+        .row
+          .col-lg-12
+            img.img-fluid.rounded(src="/images/google_contacts/contacts_sync_across_devices.png", alt="Google Contacts - Sync Across Devices")
       
       .mt-5
         h3 Project Challenges
         p One challenge that we faced while updating Contacts was the contact profile view on the app. Prior to version 2.0 a contact profile had a large header section meant for that contacts the took up more than half the screen. The problem was research showed the majority of users never took the time to upload an image for their contacts and so most users would simply have an avatar with the contact's initial. Feedback in the Google Play Store showed users felt this was a waste of space. Following this feedback the decision was made to reduce the height of the header section to a third of the screen and place the profile image inside a circle within the header.
-
+        
+        p Shortly following the release of the smaller header users on the Google Play Store expressed that they did not like the smaller images in the header. In an effort to please both users who enjoyed having large profile images for their contacts and those who were more concerned with saving screen real estate, logic was applied by the engineers to use a large full bleed image for those contacts who have a profile image and a small monogram with the contact's initial for those without an image.
+        
+        .row.mt-5.text-center
+          .col-lg-4
+            img.img-fluid(src="/images/google_contacts/contacts_quickContact_1.7.png")
+            small.text-secondary Contacts Profile v1.7
+          .col-lg-4
+            img.img-fluid(src="/images/google_contacts/contacts_quickContact_2.1.png")
+            small.text-secondary Contacts Profile v2.1
+          .col-lg-4
+            img.img-fluid(src="/images/google_contacts/contacts_quickContact_2.2.png")
+            small.text-secondary Contacts Profile v2.2
+      .mt-5
+        h3 Next Steps
+        p I am still working on this project. We will be researching how the new header style is being received and continue exploring ways to integrate Contacts with other Apps and provide users with even more valuable information about their contacts.
+        
+      .mt-5
+        img.img-fluid(src="/images/google_contacts/contacts_tablet_quickContact.jpg", alt="")
       .mt-5
         a(href="/")
           span.fa.fa-angle-left
